@@ -1,6 +1,0 @@
-.news-card { display: flex; min-height: 0; flex-direction: column; }
-.news-type { margin-bottom: 16px; color: var(--blue-dark); font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.news-card h2 { margin: 0 0 10px; font: 800 1.15rem/1.4 'Manrope', sans-serif; letter-spacing: -.035em; }
-.news-card p { margin: 0; color: var(--ink-soft); line-height: 1.8; }
-.news-note { margin-top: 24px; }
-.news-link { margin-top: 18px; }
