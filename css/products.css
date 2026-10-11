@@ -1,0 +1,10 @@
+.product-feature-card { display: grid; grid-template-columns: .72fr 1.28fr; overflow: hidden; padding: 0; border-radius: 14px; }
+.product-art { position: relative; min-height: 300px; display: grid; place-items: center; overflow: hidden; background: radial-gradient(circle at 72% 22%, rgba(255,255,255,.78), transparent 9rem), linear-gradient(150deg, #d9e3f8, #f7e3ce 60%, #d8eee3); }
+.product-art-logo { z-index: 1; width: min(58%, 190px); height: auto; object-fit: contain; transition: transform 220ms ease; }
+.product-art-ring { position: absolute; width: 250px; height: 250px; border: 1px solid rgba(181,113,60,.24); border-radius: 50%; box-shadow: 0 0 0 28px rgba(181,113,60,.035), 0 0 0 58px rgba(65,132,111,.035); }
+.product-description { align-self: center; padding: 30px; }
+.product-description h2 { margin: 0; font: 800 clamp(2.2rem, 4vw, 3.2rem)/1.12 'Manrope', sans-serif; letter-spacing: -.06em; }
+.product-description p { margin: 16px 0 0; color: var(--ink-soft); line-height: 1.85; }
+.product-description .hero-actions { margin-top: 24px; }
+@media (max-width: 760px) { .product-feature-card { grid-template-columns: 1fr; } .product-art { min-height: 210px; } .product-art-logo { width: min(52%, 160px); } .product-art-ring { width: 210px; height: 210px; } .product-description { padding: 24px 20px; } }
+@media (prefers-reduced-motion: no-preference) { .product-feature-card:hover .product-art-logo { transform: scale(1.04); } }
