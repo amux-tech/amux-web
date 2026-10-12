@@ -1,12 +1,163 @@
-.codeclash-overview { display: grid; grid-template-columns: 1.1fr .9fr; gap: 30px; align-items: center; }
-.codeclash-mark { position: relative; min-height: 280px; display: grid; place-items: center; overflow: hidden; border: 1px solid color-mix(in srgb, var(--page-accent) 22%, white); border-radius: 14px; background: radial-gradient(circle at 72% 24%, rgba(255,255,255,.78), transparent 9rem), linear-gradient(150deg, #d9e3f8, #f7e3ce 60%, #d8eee3); }
-.codeclash-mark::before, .codeclash-mark::after { position: absolute; width: 230px; height: 230px; border: 1px solid color-mix(in srgb, var(--page-accent) 28%, transparent); border-radius: 50%; content: ""; }
-.codeclash-mark::after { width: 300px; height: 300px; border-color: color-mix(in srgb, var(--page-accent) 18%, transparent); }
-.codeclash-mark img { z-index: 1; width: min(58%, 190px); height: auto; object-fit: contain; }
-.codeclash-copy h2 { margin: 0 0 14px; font: 800 clamp(2rem, 3.8vw, 3rem)/1.16 'Manrope', sans-serif; letter-spacing: -.055em; }
-.codeclash-copy p { margin: 0; color: var(--ink-soft); line-height: 1.9; }
-.codeclash-copy .hero-actions { margin-top: 24px; }
-.codeclash-features .surface-card { min-height: 0; }
-@media (max-width: 800px) { .codeclash-overview { grid-template-columns: 1fr; } }
-@media (prefers-reduced-motion: no-preference) { .codeclash-mark::before { animation: codeclash-orbit 32s linear infinite; } .codeclash-mark img { transition: transform 220ms ease; } .codeclash-mark:hover img { transform: scale(1.04); } }
-@keyframes codeclash-orbit { to { transform: rotate(360deg); } }
+.codeclash-overview {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 30px;
+  align-items: center;
+}
+.codeclash-mark {
+  position: relative;
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--page-accent) 22%, white);
+  border-radius: 14px;
+  background:
+    radial-gradient(
+      circle at 72% 24%,
+      rgba(255, 255, 255, 0.78),
+      transparent 9rem
+    ),
+    linear-gradient(150deg, #d9e3f8, #f7e3ce 60%, #d8eee3);
+}
+.codeclash-mark::before,
+.codeclash-mark::after {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border: 1px solid color-mix(in srgb, var(--page-accent) 28%, transparent);
+  border-radius: 50%;
+  content: "";
+}
+.codeclash-mark::after {
+  width: 300px;
+  height: 300px;
+  border-color: color-mix(in srgb, var(--page-accent) 18%, transparent);
+}
+.codeclash-mark img {
+  z-index: 1;
+  width: min(58%, 190px);
+  height: auto;
+  object-fit: contain;
+}
+.codeclash-copy h2 {
+  margin: 0 0 14px;
+  font:
+    800 clamp(2rem, 3.8vw, 3rem)/1.16 "Manrope",
+    sans-serif;
+  letter-spacing: -0.055em;
+}
+.codeclash-copy p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.9;
+}
+.codeclash-copy .hero-actions {
+  margin-top: 24px;
+}
+.codeclash-features .surface-card {
+  min-height: 0;
+}
+@media (max-width: 800px) {
+  .codeclash-overview {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .codeclash-mark::before {
+    animation: codeclash-orbit 32s linear infinite;
+  }
+  .codeclash-mark img {
+    transition: transform 220ms ease;
+  }
+  .codeclash-mark:hover img {
+    transform: scale(1.04);
+  }
+}
+@keyframes codeclash-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.codeclash-overview {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 30px;
+  align-items: center;
+}
+.codeclash-mark {
+  position: relative;
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--page-accent) 22%, white);
+  border-radius: 14px;
+  background:
+    radial-gradient(
+      circle at 72% 24%,
+      rgba(255, 255, 255, 0.78),
+      transparent 9rem
+    ),
+    linear-gradient(150deg, #d9e3f8, #f7e3ce 60%, #d8eee3);
+}
+.codeclash-mark::before,
+.codeclash-mark::after {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border: 1px solid color-mix(in srgb, var(--page-accent) 28%, transparent);
+  border-radius: 50%;
+  content: "";
+}
+.codeclash-mark::after {
+  width: 300px;
+  height: 300px;
+  border-color: color-mix(in srgb, var(--page-accent) 18%, transparent);
+}
+.codeclash-mark img {
+  z-index: 1;
+  width: min(58%, 190px);
+  height: auto;
+  object-fit: contain;
+}
+.codeclash-copy h2 {
+  margin: 0 0 14px;
+  font:
+    800 clamp(2rem, 3.8vw, 3rem)/1.16 "Manrope",
+    sans-serif;
+  letter-spacing: -0.055em;
+}
+.codeclash-copy p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.9;
+}
+.codeclash-copy .hero-actions {
+  margin-top: 24px;
+}
+.codeclash-features .surface-card {
+  min-height: 0;
+}
+@media (max-width: 800px) {
+  .codeclash-overview {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .codeclash-mark::before {
+    animation: codeclash-orbit 32s linear infinite;
+  }
+  .codeclash-mark img {
+    transition: transform 220ms ease;
+  }
+  .codeclash-mark:hover img {
+    transform: scale(1.04);
+  }
+}
+@keyframes codeclash-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}

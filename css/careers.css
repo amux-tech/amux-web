@@ -10,12 +10,12 @@
 .careers-role h2 {
   margin-bottom: 4px;
   font-size: clamp(2rem, 4vw, 3rem);
-  letter-spacing: -.06em;
+  letter-spacing: -0.06em;
 }
 .careers-role .role-duration {
   margin: 0 0 16px;
   color: var(--blue-dark);
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 800;
 }
 .careers-role > p:not(.role-duration) {
@@ -77,7 +77,7 @@
   font-family: "Manrope", sans-serif;
   font-size: 1.25rem;
   font-weight: 800;
-  letter-spacing: -.035em;
+  letter-spacing: -0.035em;
 }
 .career-service p {
   flex: 1;
@@ -95,7 +95,7 @@
   border-radius: 0 10px 10px 0;
   background: linear-gradient(105deg, var(--page-wash), var(--page-alt));
   color: var(--ink-soft);
-  font-size: .86rem;
+  font-size: 0.86rem;
 }
 @media (max-width: 700px) {
   .careers-role-layout {
