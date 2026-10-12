@@ -80,7 +80,8 @@
   }
 
   .product-art {
-    min-height: 220px;
+    aspect-ratio: 1;
+    min-height: 0;
   }
 
   .product-art-logo {
@@ -88,8 +89,12 @@
   }
 
   .product-art-ring {
-    width: 210px;
-    height: 210px;
+    width: min(210px, calc(100% - 76px));
+    height: auto;
+    aspect-ratio: 1;
+    box-shadow:
+      0 0 0 18px rgba(181, 113, 60, 0.035),
+      0 0 0 36px rgba(65, 132, 111, 0.035);
   }
 
   .product-description {
@@ -103,7 +108,7 @@
 
 @media (max-width: 420px) {
   .product-art {
-    min-height: 190px;
+    min-height: 0;
   }
 
   .product-description {
